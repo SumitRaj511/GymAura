@@ -48,7 +48,7 @@ GymAura is a UI/UX portfolio project by **Sumit Raj**. It pairs an expressive vi
 | HTML5 | Semantic page structure, forms, dialogs, and video elements |
 | CSS3 | Custom styling, responsive layouts, transitions, and animations |
 | Vanilla JavaScript | Workout generation, meal selection, progress tracking, and UI interactions |
-| Web Storage API (`localStorage`) | Saving plans in the current browser |
+| Web Storage API | Saving plans in the current browser |
 | Google Fonts | Barlow Condensed and DM Sans typography |
 | WebP and MP4 | Image and video assets |
 | Vercel | Live website hosting |
