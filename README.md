@@ -1,43 +1,72 @@
-# GymAura
+GymAura — Train with Intention
+A responsive workout and nutrition planning website that helps users build a weekly fitness routine around their goals, experience, equipment, and available time. Created as a UI/UX portfolio project by Sumit Raj, GymAura combines an expressive visual identity with interactive planning tools.
+Live Demo
+Explore GymAura →
+Features
+Personalized Workout Planner
+- Choose between strength, endurance, and mobility goals.
+- Customize routines by experience level, training schedule, equipment, and session duration.
+- Generate a seven-day schedule with training and recovery days.
+- Mark exercises as complete and view progress indicators.
+- Save plans in the browser and export them as text.
+Nutrition Planner
+- Explore balanced, vegetarian, and vegan meal examples.
+- Swap meals and view updated nutrition estimates.
+- Download a shopping list for the selected meals.
+Interactive Experience
+- Immersive fitness imagery and locally hosted gym videos.
+- Scroll reveals, animated typography, parallax imagery, and interactive card effects.
+- Workout-duration slider with visual feedback.
+- Responsive layouts for desktop and mobile screens.
+- Keyboard controls, accessible form labels, video pause controls, and reduced-motion support.
+Tech Stack
+Technology	Purpose
+HTML5	Semantic page structure, forms, dialogs, and video elements
+CSS3	Custom styling, responsive layouts, transitions, and animations
+Vanilla JavaScript	Workout generation, meal selection, progress tracking, and UI interactions
+Web Storage API — localStorage	Saving plans in the current browser
+Google Fonts	Barlow Condensed and DM Sans typography
+WebP and MP4	Image and video assets
+Vercel	Live website hosting
 
-A responsive fitness planning concept designed for Sumit Raj's UI/UX portfolio. The visual direction follows the supplied design reference: charcoal surfaces, neon lime, expressive typography, and large fitness photography.
+
+The project is a static frontend application. It requires no package installation, build step, backend server, database, or API keys.
+UI/UX Design
+GymAura's visual identity combines charcoal backgrounds, neon-lime accents, bold typography, and large fitness photography. Primary actions and progress states use lime to make the next step easy to identify.
+
+The user journey moves from exploring fitness goals to creating a weekly workout routine and selecting meal ideas. Short forms, immediate feedback, and account-free access keep the planning experience straightforward.
+
+Key design considerations include:
+- Visual hierarchy: prominent headings and clear calls to action.
+- Consistency: shared colors, spacing, buttons, and card treatments.
+- Interaction feedback: selected states, progress indicators, and slider feedback.
+- Responsive design: layouts that adapt to smaller screens.
+- Accessibility: semantic controls, keyboard interaction, and reduced-motion preferences.
+Run Locally
+1. Download and extract the project, or clone your copy of its repository.
+2. Open a terminal in the GymAura folder containing dist.
+3. Start a local static server using Python:
+   python -m http.server 8000 --directory dist
+   On systems where Python uses the python3 command:
+   python3 -m http.server 8000 --directory dist
+4. Visit http://localhost:8000 in your browser.
+Alternatively, serve the dist folder using a static-server extension such as VS Code Live Server.
+Project Files
+Path	Description
+dist/index.html	Page structure, content, and planner controls
+dist/styles.css	Visual styling, responsive layouts, and animations
+dist/app.js	Planning logic, progress, local storage, downloads, and video controls
+dist/assets/	Fitness images and video files
+README.md	Project overview and setup instructions
 
 
-## Run locally
+How It Works
+Users enter their preferences, and JavaScript builds a routine from predefined exercises and schedules. Meal selections update the displayed nutrition estimates and shopping list. Saved plans remain in the current browser through local storage.
 
-No dependencies or build step are needed. Run `python -m http.server 8000 --directory dist` from this directory, then open http://localhost:8000.
+The planner uses predefined rules; it does not call an AI model. Saved data does not sync across devices. Workouts and meal examples are illustrative, and nutrition values are approximate; individual calorie targets and ingredient quantities are not calculated.
 
-## Features
+Author
+Sumit Raj
+GitHub · Live Demo
 
-- Workout routines for strength, endurance, and mobility with experience, schedule, equipment, and session-time controls.
-- Seven-day training and recovery schedule, exercise completion, progress indicators, plan saving, and text export.
-- Balanced, vegetarian, and vegan meal examples, alternative meals, recalculated nutrition estimates, and a downloadable shopping list.
-- Two locally hosted gym clips, an immersive video dialog, and a background video with pause control.
-- Sideways scroll reveals, staggered text transitions, scroll-linked hero typography, parallax photography, animated ticker, pointer-based card tilt, and reduced-motion support.
-- Workout-time slider with a 6–24px growing fill, stronger glow, and five session-power levels from Reset to Peak.
-- Responsive mobile layout, keyboard controls, native accessible form controls and dialogs.
-
-## Design decisions
-
-The landing page leads from motivation to training goals, then to a working planner. The meal planner brings nutrition into the same journey. Dark surfaces keep visual attention on photography and interactive state, while lime identifies primary actions and progress. Personalisation is deliberately short and requires no account.
-
-This is a portfolio concept, not a real fitness company. It makes no fabricated customer or trainer claims. Workouts and meal estimates are illustrative, not clinical recommendations. The routine generator is deterministic and browser-local; it does not use AI or connect to a backend. Data is saved only in the current browser's local storage when saved. Plans do not sync between devices. Nutrition is approximate; ingredient quantities and individual calorie targets are not calculated.
-
-## Files
-
-- `dist/index.html` — page structure and accessible controls.
-- `dist/styles.css` — visual system, responsive layouts, transitions, motion preferences.
-- `dist/app.js` — workout generation, meal selection, progress, persistence, downloads, video controls.
-- `dist/assets/` — optimised images and gym videos.
-- `.openai/hosting.json` — static hosting configuration.
-
-## Media
-
-- Hero: the user-supplied reference at https://lightpink-eagle-586211.hostingersite.com/.
-- Photography: Unsplash.
-- Gym clips: Mixkit, “A young muscular man training at the gym with the battle ropes” (52079) and “Man training on the bars in the gym” (23450).
-- Fonts: Barlow Condensed and DM Sans via Google Fonts; system font fallbacks included.
-
-## Validation
-
-JavaScript syntax checked with Node. Browser checks cover workout generation, completion, saved state after reload, diet filters, meal swaps, shopping-list content, video playback, desktop rendering, and a 390px mobile viewport. No dependencies, analytics, accounts, or external API keys are required.
+Built as a portfolio project showcasing frontend development, responsive interface design, and interactive user experiences.
