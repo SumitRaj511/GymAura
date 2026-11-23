@@ -1,0 +1,4 @@
+Open dist/index.html in your browser to view GymAura.
+For local development, run: python -m http.server 8000 --directory dist
+Then open http://localhost:8000
+No installation or API keys required.
